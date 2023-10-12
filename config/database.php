@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Str;
-
+/* 
 require( __DIR__ . '/../../include/connect.php');
-
+ */
 return [
 
     /*
@@ -42,11 +42,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => $HOST,
+            'host' => env('localhost'),
             'port' => env('DB_PORT', '3306'),
-            'database' => $DB,
-            'username' => $USER,
-            'password' => $PASSWORD,
+            'database' => env('progetto_db'),
+            'username' => env('tweb'),
+            'password' => env('tweb'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
